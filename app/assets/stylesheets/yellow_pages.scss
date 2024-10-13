@@ -1,3 +1,203 @@
 // Place all the styles related to the YellowPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media(min-width: 576px) {
+    .navbar {
+        background-color: $yellow;
+
+        .container {
+            height: 42px;
+            padding: 0 !important;
+
+            .yp-logo-sm,
+            .yp-logo {
+                position: relative;
+                bottom: 0.415rem;
+            }
+
+            .hide-yp-logo-sm {
+                width: 44px;
+                height: 44px;
+                object-fit: cover;
+                object-position: 0 0;
+            }
+
+            .btn-sidebar {
+                #yp-icon-bar {
+                    color: $dark;
+                }
+            }
+
+            #yp-sidebar {
+                width: 250px;
+                .sidebar-header {
+                    padding: 15px;
+
+                    button {
+                        .fa-times {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .sidebar-body {
+                    a {
+                        font-size: 0.875rem;
+                    }
+
+                    .btn-login:hover {
+                        color: $light !important;
+                        opacity: 0.8;
+                    }
+
+                    #btn-register {
+                        background-color: $yellow;
+                    }
+                }
+            }
+
+            /* Search bar with drop down style */
+            .middle-section {
+                flex-grow: 2;
+                bottom: 0.315rem;
+
+                .dropdown {
+                    .btn {
+                        font-size: 14px !important;
+                        color: $dark;
+                        font-weight: 700;
+
+                        i {
+                            font-size: 14px !important;
+                            color: $dark;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .border-right {
+                        border-radius: 0;
+                        border-right: 2px solid $placeholder-text !important;
+                    }
+
+                    .dropdown-menu {
+                        width: 182px;
+                        font-size: 14px;
+
+                        .dropdown-item {
+                            color: $dark;
+
+                            i {
+                                color: $dropdown-text;
+                            }
+                        }
+                    }
+                }
+
+                .search-bar-mobile-wrapper {
+                    width: 100%;
+                    padding-right: 60px !important;
+
+                    .search-bar {
+                        width: 125%;
+                        height: 40px;
+                        padding: 10px;
+                        padding-left: 5.4em;
+                        margin-right: 5rem;
+
+                        &::placeholder {
+                            font-size: 14px;
+                            color: $placeholder-text;
+                            font-weight: 900;
+                        }
+                    }
+
+                    .fa-search {
+                        font-size: 14px;
+                        color: $placeholder-text;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Larger screen styles (for screens >= 992px)
+@media (min-width: 992px) {
+    .navbar {
+        .container {
+            
+            .right-section {
+                
+                .nav-item {
+                    .nav-link {
+                        color: $dark;
+                        font-size: 0.875rem;
+                        font-weight: 700;
+
+                        i {
+                            font-size: 1.25rem;
+                        }
+
+                        &.add-business {
+                            color: $yellow;
+                        }
+                    }
+                }
+
+                .form-group{
+                    width: 110%;
+                    .input-group-1{
+                        form{
+                            .search-bar-lg{
+                                .search-bar-input{
+                                    width: 300px;
+                                    height: 40px;
+                                    padding-left: 5em !important;
+                                }
+
+                                i{
+                                    color: $placeholder-text;
+                                    margin-left: 2.8rem !important;
+                                    padding-left: 2.8em !important;
+                                }
+                            } 
+
+                            .dropdown{
+                                button.border-right{
+                                    border-right: 2px solid $placeholder-text !important;
+                                }
+                            }
+                        }
+                    }
+
+
+                    .input-group-2{
+                        form{
+                            
+                            .nation-wide-wrapper {
+                                .search-bar-lg{
+                                    width: 149px;
+                                    height: 40px;
+                                    padding: 10px !important;
+                                    padding-left: 1.9em !important;
+                                }
+                                i{
+                                    color: $placeholder-text;
+                                }
+                            }
+                            .btn i{
+                                color: $yellow;
+                            }
+                        }
+                    }
+                }
+ 
+            }
+
+            
+        }
+    }
+}

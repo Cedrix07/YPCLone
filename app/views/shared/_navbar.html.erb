@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Large Screen Logo -->
+    <a class="navbar-brand mt-lg-3 d-lg-block d-sm-none" href="#">
+      <img src="<%= image_path('yp-logo.png') %>" alt="Yellow Pages logo" class="yp-logo p-0 my-0 " height="44px;">
+    </a>
+
+    <!-- Large screen -->
+    <div class="right-section d-lg-flex d-sm-none flex-grow-1">
+      <div class="form-group d-none flex-grow-1 d-flex justify-content-between me-1">
+        <div class="input-group-1 me-1 position-relative">
+          <form class="w-100">
+            <div class="dropdown position-absolute top-50 start-0 translate-middle z-3 ms-4 bg-white rounded-start-2">
+              <button class="btn border-0 border-right pe-2 py-0 my-2 rounded-end-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                All
+                <i class="fas fa-angle-down"></i>
+              </button>
+              <ul class="dropdown-menu mt-2">
+                <li><a class="dropdown-item" href="#"><i class="fas fa-align-left me-4"></i> All</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-briefcase me-4"></i>Business</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-shopping-bag me-4"></i>Products</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-tools me-4"></i>Services</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-phone me-4"></i>Phone</a></li>
+              </ul>
+            </div>  
+            <div class="search-bar-lg position-relative">
+              <input type="text" placeholder="Search for businesses, products or services" class="form-control search-bar-input ps-5 ">
+              <i class="fas fa-search position-absolute top-50 start-0 translate-middle"></i>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="input-group-2">
+          <form class="d-flex gap-0 w-100">
+            <div class="nation-wide-wrapper position-relative">
+              <input type="text" placeholder="Nationwide" class="search-bar-lg rounded-start-1 rounded-end-0 mx-0">
+              <i class="fas fa-map-marker-alt search-fa-location position-absolute top-50 start-0 translate-middle ms-3"></i>
+            </div>
+            <button class="btn bg-dark rounded-start-0">
+                <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+       
+      <ul class="navbar-nav d-lg-flex align-items-center d-sm-none ms-auto  flex-shrink-0">
+        <li class="nav-item">
+          <a class="nav-link add-business bg-dark rounded-pill px-3" href="#">Add Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-none Advertise-link" href="#">Advertise With Us</a>
+        </li>
+        <li class="nav-item px-2 align-self-center">
+          <a class="nav-link p-0" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Signup</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Small Screen Logo -->
+    <a class="navbar-brand mt-lg-3 d-lg-none " href="#">
+      <img src="<%= image_path('yp-logo.png') %>" alt="Yellow Pages logo" class="yp-logo-sm p-0 my-0 " height="44px;">
+    </a>
+
+    <!-- small view <= 992px  -->
+    <div class="middle-section position-relative d-none d-lg-none w-50 me-4 pe-5">
+        <div class="dropdown position-absolute top-50 start-0 translate-middle z-3 ms-4">
+          <button class="btn border-0 border-right pe-2 py-0 mt-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <ul class="dropdown-menu mt-3">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-align-left me-4"></i> All</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-briefcase me-4"></i>Business</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-shopping-bag me-4"></i>Products</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-tools me-4"></i>Services</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-phone me-4"></i>Phone</a></li>
+          </ul>
+        </div>  
+        <div class="search-bar-mobile-wrapper position-relative ">
+          <input type="text" placeholder="Search for businesses, products or services" class="form-control search-bar">
+          <i class="fas fa-search position-absolute top-50 start-0 translate-middle ms-5 ps-5"></i>
+        </div>
+    </div>
+   
+    <!-- small view <=992px -->
+    <div class="sidebar-button-wrapper d-lg-none d-md-flex d-flex align-items-center">
+      <a href="#" class="nav-link">
+        <i class="fas fa-shopping-cart fs-4"></i>
+      </a>
+      <a class="btn btn-sidebar border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#yp-sidebar" aria-controls="yp-sidebar">
+        <i class="fas fa-bars fs-4" id="yp-icon-bar"></i>
+      </a>
+    </div>
+
+    
+    <!-- Sidebar for small screens -->
+    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="yp-sidebar" aria-labelledby="yp-sidebarLabel">
+      <div class="offcanvas-header sidebar-header d-flex justify-content-between position-relative pb-0 ">
+        <img src="<%= image_path('yp-sidebar-logo.png') %>" alt="yp-logo" height="44px;">
+        <button type="button" class="btn border-0 position-absolute top-0 end-0 py-3 pe-4" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body sidebar-body">
+        <a href="#" class="btn btn-login btn-outline-dark d-block mb-2 p-1">Login</a>
+        <a href="#" class="btn d-block" id="btn-register">Create an account</a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+$yellow: #facb0c;
+$dark:#212529;
+$light: #f8f9fa;
+$placeholder-text:#dee2e6;
+$dropdown-text: #6c757d;
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+input[type="text"], input[type="search"]{
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow:none !important;
+}
+
+body {
+    // font-size: 14px;
+    line-height: 1.5;
+    // -webkit-font-smoothing: antialiased;
+    font-family: 'Liberation Sans', sans-serif;
+    height: 3000px;
+}
+
+/*
+     Improve media defaults
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+  
