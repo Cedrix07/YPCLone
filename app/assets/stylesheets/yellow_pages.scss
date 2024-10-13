@@ -2,135 +2,213 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@media(min-width: 576px) {
-    .navbar {
-        background-color: $yellow;
+.navbar {
+    background-color: $yellow;
 
-        .container {
-            height: 42px;
-            padding: 0 !important;
+    .container {
+        height: 42px;
+        padding: 0 !important;
 
-            .yp-logo-sm,
-            .yp-logo {
-                position: relative;
-                bottom: 0.415rem;
+        .yp-logo-sm,
+        .yp-logo {
+            position: relative;
+            bottom: 0.415rem;
+        }
+
+        .hide-yp-logo-sm {
+            width: 44px;
+            height: 44px;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+
+        .btn-sidebar {
+            #yp-icon-bar {
+                color: $dark;
             }
+        }
 
-            .hide-yp-logo-sm {
-                width: 44px;
-                height: 44px;
-                object-fit: cover;
-                object-position: 0 0;
-            }
+        #yp-sidebar {
+            width: 250px;
 
-            .btn-sidebar {
-                #yp-icon-bar {
-                    color: $dark;
-                }
-            }
+            .sidebar-header {
+                padding: 15px;
 
-            #yp-sidebar {
-                width: 250px;
-                .sidebar-header {
-                    padding: 15px;
-
-                    button {
-                        .fa-times {
-                            font-weight: bold;
-                        }
-                    }
-                }
-
-                .sidebar-body {
-                    a {
-                        font-size: 0.875rem;
-                    }
-
-                    .btn-login:hover {
-                        color: $light !important;
-                        opacity: 0.8;
-                    }
-
-                    #btn-register {
-                        background-color: $yellow;
-                    }
-                }
-            }
-
-            /* Search bar with drop down style */
-            .middle-section {
-                flex-grow: 2;
-                bottom: 0.315rem;
-
-                .dropdown {
-                    .btn {
-                        font-size: 14px !important;
-                        color: $dark;
-                        font-weight: 700;
-
-                        i {
-                            font-size: 14px !important;
-                            color: $dark;
-                            font-weight: 700;
-                        }
-                    }
-
-                    .border-right {
-                        border-radius: 0;
-                        border-right: 2px solid $placeholder-text !important;
-                    }
-
-                    .dropdown-menu {
-                        width: 182px;
-                        font-size: 14px;
-
-                        .dropdown-item {
-                            color: $dark;
-
-                            i {
-                                color: $dropdown-text;
-                            }
-                        }
-                    }
-                }
-
-                .search-bar-mobile-wrapper {
-                    width: 100%;
-                    padding-right: 60px !important;
-
-                    .search-bar {
-                        width: 125%;
-                        height: 40px;
-                        padding: 10px;
-                        padding-left: 5.4em;
-                        margin-right: 5rem;
-
-                        &::placeholder {
-                            font-size: 14px;
-                            color: $placeholder-text;
-                            font-weight: 900;
-                        }
-                    }
-
-                    .fa-search {
-                        font-size: 14px;
-                        color: $placeholder-text;
+                button {
+                    .fa-times {
                         font-weight: bold;
                     }
                 }
             }
+
+            .sidebar-body {
+                a {
+                    font-size: 0.875rem;
+                }
+
+                .btn-login:hover {
+                    color: $light !important;
+                    opacity: 0.8;
+                }
+
+                #btn-register {
+                    background-color: $yellow;
+                }
+            }
+        }
+
+        /* Search bar with drop down style */
+        .middle-section {
+            flex-grow: 2;
+            bottom: 0.315rem;
+
+            .dropdown {
+                .btn {
+                    font-size: 14px !important;
+                    color: $dark;
+                    font-weight: 700;
+
+                    i {
+                        font-size: 14px !important;
+                        color: $dark;
+                        font-weight: 700;
+                    }
+                }
+
+                .border-right {
+                    border-radius: 0;
+                    border-right: 2px solid $placeholder-text !important;
+                }
+
+                .dropdown-menu {
+                    width: 182px;
+                    font-size: 14px;
+
+                    .dropdown-item {
+                        color: $dark;
+
+                        i {
+                            color: $dropdown-text;
+                        }
+                    }
+                }
+            }
+
+            .search-bar-mobile-wrapper {
+                width: 100%;
+                padding-right: 60px !important;
+
+                .search-bar {
+                    width: 125%;
+                    height: 40px;
+                    padding: 10px;
+                    padding-left: 5.4em;
+                    margin-right: 5rem;
+
+                    &::placeholder {
+                        font-size: 14px;
+                        color: $placeholder-text;
+                        font-weight: 900;
+                    }
+                }
+
+                .fa-search {
+                    font-size: 14px;
+                    color: $placeholder-text;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// Main content style 
+
+// hero section 
+.hero-section {
+    background-color: $yellow;
+    padding-top: 7.25rem;
+    // min-height: 50vh;
+    padding-bottom: 0.318em;
+    .container {
+        h1 {
+            font-size: 2rem;
+            font-family: 'Lora';
+            font-style: italic;
+            font-weight: 600;
+            margin: 0 auto;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+        }
+
+        .hero-search-group-sm {
+            margin-top: 1.2rem;
+           .first-col {
+                .dropdown {
+                    button {
+                        color: $dark;
+                        font-weight: 900;   
+                        font-size: 0.875rem;
+                        &.border-right {
+                            border-right: 2px solid $placeholder-text !important;
+                        }
+                    }
+                }
+
+                .search-wrapper {
+                    .search-bar-sm {
+                        max-width: 676px;
+                        padding: 10px !important;
+                        padding-left: 5.4em !important;
+                        
+                        &::placeholder{
+                            font-size: 0.875rem;
+                        }
+                    }
+                    i{
+                        font-size: 1rem;
+                        margin-left: 5rem;
+                        color: $placeholder-text;
+                    }
+                }
+            }
+        .second-col form{
+            .nation-wide-input{
+                max-width: 676px;
+                height: 44px;
+                font-size: 0.875rem;
+                padding-left: 2.3em !important;
+            }
+            i{
+                color: $placeholder-text;
+                font-size: 0.875rem;
+                margin-left: 1.8rem;
+                padding-bottom: 0.5em;
+            }
+        }
         }
     }
 
 }
 
+.yp-cover{
+    background: url("https://static3.eyellowpages.ph/assets/yp_home_bg-c01ba6e158cabe40e5cc0a0048a98d248e397215f921fcffb948bed8a02fc729.webp") transparent no-repeat;
+    background-color: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-color: #facb0c;
+    opacity: .7;
+}
 // Larger screen styles (for screens >= 992px)
 @media (min-width: 992px) {
     .navbar {
         .container {
-            
             .right-section {
-                
                 .nav-item {
                     .nav-link {
                         color: $dark;
@@ -147,35 +225,38 @@
                     }
                 }
 
-                .form-group{
+                .form-group {
                     width: 110%;
-                    .input-group-1{
-                        form{
-                            .search-bar-lg{
-                                .search-bar-input{
+
+                    .input-group-1 {
+                        form {
+                            .search-bar-lg {
+                                .search-bar-input {
                                     width: 300px;
                                     height: 40px;
                                     padding-left: 5em !important;
                                 }
 
-                                i{
+                                i {
                                     color: $placeholder-text;
                                     margin-left: 2.8rem !important;
                                     padding-left: 2.8em !important;
                                 }
-                            } 
+                            }
 
-                            
-                            .dropdown{
+                            .dropdown {
                                 height: 40px;
-                                .dropdown-menu{
+
+                                .dropdown-menu {
                                     width: 182px;
                                     font-size: 14px;
                                 }
-                                button{
+
+                                button {
                                     font-size: 0.875rem;
                                     font-weight: 900;
-                                    &.border-right{
+
+                                    &.border-right {
                                         border-right: 2px solid $placeholder-text !important;
                                     }
                                 }
@@ -183,31 +264,43 @@
                         }
                     }
 
+                    .input-group-2 {
+                        form {
 
-                    .input-group-2{
-                        form{
-                            
                             .nation-wide-wrapper {
-                                .search-bar-lg{
+                                .search-bar-lg {
                                     width: 149px;
                                     height: 40px;
                                     padding: 10px !important;
                                     padding-left: 1.9em !important;
                                 }
-                                i{
+
+                                i {
                                     color: $placeholder-text;
                                 }
                             }
-                            .btn i{
+
+                            .btn i {
                                 color: $yellow;
                             }
                         }
                     }
                 }
- 
+            }
+        }
+    }
+
+    .hero-section {
+        .container {
+            h1 {
+                font-size: 2.188rem;
             }
 
-            
+            .hero-nav-tab{
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+            }
         }
     }
 }
