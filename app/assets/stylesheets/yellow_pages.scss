@@ -166,8 +166,17 @@
                             } 
 
                             .dropdown{
-                                button.border-right{
-                                    border-right: 2px solid $placeholder-text !important;
+                                height: 40px;
+                                .dropdown-menu{
+                                    width: 182px;
+                                    font-size: 14px;
+                                }
+                                button{
+                                    font-size: 0.875rem;
+                                    font-weight: 900;
+                                    &.border-right{
+                                        border-right: 2px solid $placeholder-text !important;
+                                    }
                                 }
                             }
                         }
